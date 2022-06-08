@@ -1,45 +1,39 @@
+@charset "UTF-8";
 /* Inicio estilo body */
-body { 
-    background-color: rgb(34, 33, 54);
+body {
+  background-color: #222136;
 }
+
 /* Fin estilo body */
-
 /* Inicio estilo Títulos */
-.responsive #grid .tituloPagina {
-    grid-area: img;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border: 1px solid rgb(53, 92, 126);
-    background-color: black;
-    color: beige;
-}
 #logo {
-    grid-area: logo;
-    width: 100%;
-    height: auto;
+  grid-area: logo;
+  width: 100%;
+  height: auto;
 }
-#logo img{
-    display: flex;
-    margin: auto;
-}
-h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-/* Fin estilo Títulos */
 
+#logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+/* Fin estilo Títulos */
 /* Inicio estilos Footer */
 .pie {
-    font-size: medium;
-    text-align: center;
-    padding: 40px 0 40px;
-    background-color: #060A24;
-    color: rgb(46, 70, 134);
-    transition: all 1s;
+  font-size: medium;
+  text-align: center;
+  padding: 40px 0 40px;
+  background-color: #060A24;
+  color: #2e4686;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
-.pie:hover {
-    font-size: x-large;
-} 
-/* Fin estilos Footer */
 
+.pie:hover {
+  font-size: x-large;
+}
+
+/* Fin estilos Footer */
+/*# sourceMappingURL=styles.css.map */

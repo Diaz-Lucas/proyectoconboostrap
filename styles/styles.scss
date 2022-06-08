@@ -1,0 +1,32 @@
+/* Inicio estilo body */
+body { 
+    background-color: rgb(34, 33, 54);
+}
+/* Fin estilo body */
+
+/* Inicio estilo Títulos */
+#logo {
+    grid-area: logo;
+    width: 100%;
+    height: auto;
+    img {
+        display: flex;
+        margin: auto;
+    }
+}
+
+/* Fin estilo Títulos */
+
+/* Inicio estilos Footer */
+.pie {
+    font-size: medium;
+    text-align: center;
+    padding: 40px 0 40px;
+    background-color: #060A24;
+    color: rgb(46, 70, 134);
+    transition: all 1s;
+    &:hover {
+        font-size: x-large;
+    }
+}
+/* Fin estilos Footer */
