@@ -1,4 +1,20 @@
 @charset "UTF-8";
+/* Inicio estilos Footer */
+.pie {
+  font-size: medium;
+  text-align: center;
+  padding: 40px 0 40px;
+  background-color: #060A24;
+  color: #2e4686;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.pie:hover {
+  font-size: x-large;
+}
+
+/* Fin estilos Footer */
 /* Inicio estilo body */
 body {
   background-color: #222136;
@@ -20,20 +36,52 @@ body {
 }
 
 /* Fin estilo Títulos */
-/* Inicio estilos Footer */
-.pie {
-  font-size: medium;
-  text-align: center;
-  padding: 40px 0 40px;
-  background-color: #060A24;
-  color: #2e4686;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+/* Inicio Estilos Descarga */
+.color-asphix {
+  color: red;
 }
 
-.pie:hover {
-  font-size: x-large;
+.color-annabelle {
+  color: blue;
 }
 
-/* Fin estilos Footer */
+.color-mensaka {
+  color: green;
+}
+
+.estilo, .estilo--negro {
+  display: block;
+  margin: auto;
+  width: 240px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.estilo--negro {
+  background-color: black;
+  color: white;
+}
+
+.novedades--negro {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid white;
+  text-decoration: none;
+  background-color: black;
+}
+
+.novedades--rojo {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  background: red;
+  text-decoration: none;
+  width: 185px;
+}
+
+/* Fin Estilo Descargas */
 /*# sourceMappingURL=styles.css.map */

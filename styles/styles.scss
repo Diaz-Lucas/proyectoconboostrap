@@ -1,6 +1,10 @@
+@import 'footer';
+
+$colorFondo: rgb(34, 33, 54);
+
 /* Inicio estilo body */
 body { 
-    background-color: rgb(34, 33, 54);
+    background-color: $colorFondo;
 }
 /* Fin estilo body */
 
@@ -14,19 +18,63 @@ body {
         margin: auto;
     }
 }
-
 /* Fin estilo Títulos */
 
-/* Inicio estilos Footer */
-.pie {
-    font-size: medium;
-    text-align: center;
-    padding: 40px 0 40px;
-    background-color: #060A24;
-    color: rgb(46, 70, 134);
-    transition: all 1s;
-    &:hover {
-        font-size: x-large;
+/* Inicio Estilos Descarga */
+
+$colorBanda: (
+    asphix: red,
+    annabelle: blue,
+    mensaka: green,
+);
+
+@each $nombre, $valor in $colorBanda {
+    .color-#{$nombre} {
+        color: $valor;
     }
 }
-/* Fin estilos Footer */
+
+.estilo {
+    display: block;
+    margin: auto;
+    width: 240px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.estilo--negro {
+    @extend .estilo;
+    background-color: black;
+    color: white;
+}
+
+@mixin novedades {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid white;
+    text-decoration: none
+}
+
+.novedades--negro {
+    @include novedades;
+    background-color: black;
+}
+
+@mixin novedades ($col, $bg) {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    color: $col;
+    background: $bg;
+    text-decoration: none;
+    width: 185px;
+}
+
+.novedades--rojo {
+    @include novedades (white, red)
+}
+
+/* Fin Estilo Descargas */
